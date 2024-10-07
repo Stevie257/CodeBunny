@@ -73,7 +73,7 @@ var Module = {
 	assetDownloadProgress: {}, // Track how many bytes of each needed asset has been downloaded so far.
 
 	UE4_indexedDBName: 'UE4_assetDatabase_Bugs', // this should be an ascii ID string without special characters that is unique to the project that is being packaged
-	UE4_indexedDBVersion: 202410072213, // Bump this number to invalidate existing IDB storages in browsers.
+	UE4_indexedDBVersion: 202410072224, // Bump this number to invalidate existing IDB storages in browsers.
 };
 
 
@@ -268,7 +268,7 @@ function detectWebGL() {
 // Canvas scaling mode should be set to one of: 1=STRETCH, 2=ASPECT, or 3=FIXED.
 // This dictates how the canvas size changes when the browser window is resized
 // by dragging from the corner.
-var canvasWindowedScaleMode = 3 /*FIXED*/;
+var canvasWindowedScaleMode = 2 /*ASPECT*/;
 
 // High DPI setting configures whether to match the canvas size 1:1 with
 // the physical pixels on the screen.
